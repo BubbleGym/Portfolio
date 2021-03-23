@@ -295,11 +295,13 @@ header{
     padding-left: 0;
     margin:0;
     position:absolute;
-    top:-41px;
+    top:-62px;
     font-size: 16px;
 }
 .nav-tabs-item{
     margin-right: 74px;
+    padding-top: 21px;
+    padding-bottom: 21px;
 }
 .nav-tabs-link{
     border-bottom: 1px solid transparent;
@@ -307,7 +309,7 @@ header{
     color: rgba(243,242,240,0.5);
     text-decoration: none;
 }
-.nav-tabs-link.active{
+.nav-tabs-item.ui-state-active .nav-tabs-link{
     color:#F3F2F0 ;
     border-bottom: 1px solid #F3F2F0 ;
 }
@@ -406,4 +408,18 @@ header{
     line-height: 150%;
     opacity: 0.8;
     margin-top: 0;
+}
+.section-tech{
+    padding-bottom: 100px;
+}
+.tech{
+    display: grid;
+    grid-template: 1fr 1fr/repeat(4, 1fr);
+    text-align: center;
+}
+.tech-item{
+    border-bottom: 1px solid rgba(243,242,240,0.3);
+}
+.html, .css, .js, .jquery{
+    border-top: 1px solid rgba(243,242,240,0.3);
 }
